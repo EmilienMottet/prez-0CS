@@ -1,0 +1,35 @@
+* Un jour à Jaude (barré pour Confinement) avec OCS
+
+
+* J'ai fait un rêve entre hier et demain, 
+** nous avons de grands projets !
+** la nuit c'est ce qu'il y a entre hier et demain, comme OCS
+** Je ne prend pas de produit
+** Rêve de l'architecure (Tommy ?)
+** Faire coexister l'ancien est le nouveau monde, image d'ark, dinausore + robot du futur
+
+   
+* Les référentiels
+** Montrer une ligne en ebcdic et la montrer au format elixir
+** faire toutes les étapes (bytes -> EBCDIC -> UTF-8 -> elixir) + dire que la finalité est de manipulé les données
+** dire qu'on merge avec Bibref
+  
+
+* Interfacé avec 
+** Montrer le langage parler par CICS une commarea, et dire que le futur c'est le JSON
+** montrer l'interface démo ?
+
+   
+* Dire ce que le confinement à changer pour nous (Aymeric ?)
+** plus de temps pour nous, moins de coupure, important de garder une concentration sur un problème
+** communication plus compliqué
+   
+   
+* Bilan    
+** on en est ou de la prod ?
+** peut etre chiffrer optimiste ?
+** travailler avec plein de personnes différentes
+** Une chasse aux trésos
+** l'équipe à énormément appris d'un point de vue fonctionnelle
+
+* Questions/réponses

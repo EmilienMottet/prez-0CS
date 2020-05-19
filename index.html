@@ -1,50 +1,181 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <link rel="stylesheet" href="css/custom.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/mono-blue.css">
 
-		<script src="js/reveal.js"></script>
+    <!-- nerd fonts -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+
+            <section>
+                <section data-markdown>
+                    # In the bed with OCS !
+                </section>
+            </section>
+            <section>
+                <section data-background="./img/night.jpg">
+                    <h1 style="color: WhiteSmoke">OCS in transition</h1>
+                    <code style="color: WhiteSmoke">
+                        $ yesterday | OCS | tomorrow | OCS
+                    </code>
+                </section>
+                <section data-markdown>
+                    ![schema d'architecture](./img/archi.png)
+                </section>
+                <section data-markdown>
+                    # En transition !
+                    ```elixir
+                    defmodule OcsServices.Customer do
+
+                    def get_pdl_enrich!(pdl_id) do
+                    get_pdl_RCE!(pdl_id) |> Map.merge(get_party_by_pdl!(pdl_id))
+                    end
+
+                    end
+                    ```
+                </section>
+                <section >
+                    <h1>
+                        The dream team
+                    </h1>
+                    <p>
+                        5 linux, 4 macs, 6 windows
+                    </p>
+
+                    <img src="./img/team-pc.png" alt="teamate" />
+
+                </section>
+                <section data-markdown>
+                    ![Jaude !](./img/jaude.png)
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    # Referentials
+                </section>
+                <section>
+                    <h3>And it all starts with</h3>
+                    <blockquote class="fragment fade-out">
+                        c1c1 f0f0 f0f0 f3
+                    </blockquote>
+                    <blockquote class="fragment">
+                        AA00003
+                    </blockquote>
+                </section>
+                <section data-markdown>
+                    # But to what end ?
+                    - Merge with BibRef (PS9/PTY)
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    ## We speak the CLR language
+                    - On progresse avec CLR, nous allons utilisé du SSL
+                </section>
+                <section data-markdown>
+                    ### And we're ready for next step
+                    ```elixir
+                    def process(inqry, backend) do
+                     with {:ok, inqry_decoded} <- decode(inquiry),
+                          {:ok, inqry_transcoded} <- transcode(inquiry_decoded),
+                          {:ok, inqry_ok} <- check(inquiry_transcoded),
+                          {:ok, inqry_encoded} <- encode(backend, inquiry_ok) do
+                         send_inqry(backend, inquiry_encoded)
+                     else
+                         error = {:error, _} -> error
+                     end
+                    end
+                    ```
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    # Today
+                    - We have a look and feel Bibserve
+                    - The same interactions as Bibserve
+                    - We're working with XSP
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    # During the quarantine
+                    - Conservation de l'automie déjà presénte
+                    - Manque de contact pour détecter les besoins d'aide
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    # In conclusion
+                    - Prod in one month !
+                    - We had a treasure hunt challenge
+                    - We have gained experience to estimate us
+                    - We have gained functional knowledge
+                    - We've worked with a large number of teams
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            controls: false,
+            transition: 'zoom',
+            slideNumber: true,
+            hash: true,
+            dependencies: [{
+                    src: 'plugin/title-footer/title-footer.js',
+                    async: true,
+                    callback: function() {
+                        title_footer.initialize(" In bed with OCS - D3 - Emilien Mottet", ' rgba(39, 80, 155, 1) ', undefined, undefined, ' ./img/dgsi.png ', ' ./img/new-bib.png ');
+                    }
+                },
+                {
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/highlight/highlight.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                }
+            ]
+        });
+    </script>
+</body>
+
 </html>
