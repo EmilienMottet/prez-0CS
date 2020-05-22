@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>One day with OCS</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/reveal.css">
@@ -35,31 +35,10 @@
 
             <section>
                 <section data-markdown>
-                    # In the bed with OCS !
+                    # One day with OCS !
                 </section>
             </section>
             <section>
-                <section data-background="./img/night.jpg">
-                    <h1 style="color: WhiteSmoke">OCS in transition</h1>
-                    <code style="color: WhiteSmoke">
-                        $ yesterday | OCS | tomorrow | OCS
-                    </code>
-                </section>
-                <section data-markdown>
-                    ![schema d'architecture](./img/archi.png)
-                </section>
-                <section data-markdown>
-                    # En transition !
-                    ```elixir
-                    defmodule OcsServices.Customer do
-
-                    def get_pdl_enrich!(pdl_id) do
-                    get_pdl_RCE!(pdl_id) |> Map.merge(get_party_by_pdl!(pdl_id))
-                    end
-
-                    end
-                    ```
-                </section>
                 <section >
                     <h1>
                         The dream team
@@ -73,6 +52,21 @@
                 </section>
                 <section data-markdown>
                     ![Jaude !](./img/jaude.png)
+                </section>
+                <section data-markdown>
+                    # Our principles
+                    - Bringing added value quickly !
+                    - Mirroring Bibserve
+                    - Autonomy
+                </section>
+                <section data-background="./img/night.jpg">
+                    <h1 style="color: WhiteSmoke">OCS in transition</h1>
+                    <code style="color: WhiteSmoke">
+                        $ yesterday | OCS | tomorrow | OCS
+                    </code>
+                </section>
+                <section data-markdown>
+                    ![schema d'architecture](./img/archi.png)
                 </section>
             </section>
             <section>
@@ -89,14 +83,28 @@
                     </blockquote>
                 </section>
                 <section data-markdown>
-                    # But to what end ?
+                    # For what ?
+                    - Autonomy
                     - Merge with BibRef (PS9/PTY)
+                </section>
+                <section data-markdown>
+                    # In transition !
+                    ```elixir
+                    defmodule OcsServices.Customer do
+
+                     def get_pdl_enrich!(pdl_id) do
+                      get_pdl_RCE!(pdl_id) |> Map.merge(get_party_by_pdl!(pdl_id))
+                     end
+
+                    end
+                    ```
                 </section>
             </section>
             <section>
                 <section data-markdown>
-                    ## We speak the CLR language
-                    - On progresse avec CLR, nous allons utilisé du SSL
+                    ### We speak the CLR/FAE language
+                    - Inquiry / Order / Pricing
+                    - We're making progress with CLR, we did an SSL PoC
                 </section>
                 <section data-markdown>
                     ### And we're ready for next step
@@ -124,9 +132,10 @@
             </section>
             <section>
                 <section data-markdown>
-                    # During the quarantine
-                    - Conservation de l'automie déjà presénte
-                    - Manque de contact pour détecter les besoins d'aide
+                    # During quarantine
+                    - Preservation of the autonomy already present
+                    - Longer period of concentration
+                    - Lack of contact to detect the need for help
                 </section>
             </section>
             <section>
@@ -157,7 +166,7 @@
                     src: 'plugin/title-footer/title-footer.js',
                     async: true,
                     callback: function() {
-                        title_footer.initialize(" In bed with OCS - D3 - Emilien Mottet", ' rgba(39, 80, 155, 1) ', undefined, undefined, ' ./img/dgsi.png ', ' ./img/new-bib.png ');
+                        title_footer.initialize(" One day with OCS - D3 - Emilien Mottet", ' rgba(39, 80, 155, 1) ', undefined, undefined, ' ./img/dgsi.png ', ' ./img/new-bib.png ');
                     }
                 },
                 {
